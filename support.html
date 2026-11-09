@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Support – WeekSpark</title>
+<meta name="description" content="WeekSpark support and frequently asked questions — in English and Swedish.">
 <style>
   :root {
     color-scheme: light dark;
@@ -79,6 +80,32 @@
     margin: 0;
     color: var(--muted);
   }
+  .faq-item ol {
+    margin: 0.4em 0 0.5em;
+    padding-left: 1.3em;
+    color: var(--muted);
+  }
+  .faq-item li { margin: 0.2em 0; }
+  .ui { font-weight: 700; color: var(--text); }
+  .lang-switch {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 8px;
+  }
+  .lang-switch a {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--card);
+  }
+  .lang-section + .lang-section {
+    margin-top: 64px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
   footer {
     margin-top: 3em;
     color: var(--muted);
@@ -89,44 +116,120 @@
 <body>
 <main>
   <h1>WeekSpark</h1>
-  <p class="subtitle">Support</p>
+  <nav class="lang-switch" aria-label="Language / Språk">
+    <a href="#en" hreflang="en">English</a>
+    <a href="#sv" hreflang="sv">Svenska</a>
+  </nav>
 
-  <p>Fastnat på något, hittat en bugg, eller har en idé för appen? Hör av dig — WeekSpark drivs och underhålls av en person, så du pratar direkt med den som byggt appen.</p>
+  <section class="lang-section" id="en" lang="en">
+    <p class="subtitle">Support</p>
 
-  <div class="contact">
-    <p><strong>Daniel Oinonen</strong></p>
-    <p><a href="mailto:sereman@gmail.com">sereman@gmail.com</a></p>
-  </div>
+    <p>Stuck on something, found a bug, or have an idea for the app? Get in touch — WeekSpark is built and maintained by one person, so you talk directly to the person who made it.</p>
 
-  <h2 class="faq-title">Vanliga frågor</h2>
+    <div class="contact">
+      <p><strong>Daniel Oinonen (Darosel.Apps)</strong></p>
+      <p><a href="mailto:darosel.apps@gmail.com">darosel.apps@gmail.com</a></p>
+    </div>
 
-  <div class="faq-item">
-    <h3>Hur fungerar provperioden?</h3>
-    <p>WeekSpark är fullt fungerande gratis i 7 dagar från första gången du öppnar appen. Efter det behöver du låsa upp appen permanent med ett engångsköp — ingen prenumeration, inga återkommande kostnader.</p>
-  </div>
+    <h2 class="faq-title">Frequently asked questions</h2>
 
-  <div class="faq-item">
-    <h3>Jag har redan köpt WeekSpark men det syns inte som upplåst</h3>
-    <p>Öppna appens inställningar och tryck på "Återställ köp". Det kopplar ditt tidigare köp till den här installationen. Kontrollera också att du är inloggad med samma Apple-ID eller Google-konto som du använde vid köptillfället.</p>
-  </div>
+    <div class="faq-item">
+      <h3>How does the free trial work?</h3>
+      <p>WeekSpark is fully working for free for 7 days from the first time you open it. After that, you unlock it for good with a single one-time purchase — no subscription, nothing recurring.</p>
+    </div>
 
-  <div class="faq-item">
-    <h3>Sparas mina händelser i molnet?</h3>
-    <p>Nej. WeekSpark sparar allt lokalt på din enhet, det finns ingen molnsynkronisering ännu. Det betyder också att om du byter telefon eller raderar appen försvinner dina händelser — säkerhetskopiera gärna viktig information på annat sätt tills en synkfunktion finns på plats.</p>
-  </div>
+    <div class="faq-item">
+      <h3>I already bought WeekSpark, but it isn’t unlocked</h3>
+      <p>Tap the gear icon to open <span class="ui">Settings</span> and tap <span class="ui">Restore purchase</span>. This links your earlier purchase to this installation. Make sure you are signed in with the same Apple ID you used when you bought it.</p>
+    </div>
 
-  <div class="faq-item">
-    <h3>Kan jag använda WeekSpark på flera enheter?</h3>
-    <p>Ja, köpet är kopplat till ditt Apple-ID eller Google-konto, inte en specifik enhet. Installera appen och tryck "Återställ köp" på din andra enhet för att låsa upp den där också.</p>
-  </div>
+    <div class="faq-item">
+      <h3>Can I use WeekSpark on more than one iPhone?</h3>
+      <p>Yes. The purchase belongs to your Apple ID, not to one device. Install WeekSpark on the other iPhone and tap <span class="ui">Restore purchase</span> in <span class="ui">Settings</span> to unlock it there too.</p>
+    </div>
 
-  <div class="faq-item">
-    <h3>Jag har hittat en bugg</h3>
-    <p>Skriv gärna till oss på e-postadressen ovan med en beskrivning av vad som hände, och gärna en skärmdump om det går. Nämn också vilken telefonmodell och appversion du använder.</p>
-  </div>
+    <div class="faq-item">
+      <h3>Are my notes saved in the cloud? What if I get a new phone?</h3>
+      <p>Everything is stored only on your phone — there is no account and no cloud sync. To move your notes to a new phone, make a backup file and open it there:</p>
+      <ol>
+        <li>On your old phone, tap the gear icon and choose <span class="ui">Back up your notes</span>. Save the file, for example to iCloud Drive in Files, or send it to yourself.</li>
+        <li>On your new phone, install WeekSpark, tap the gear icon and choose <span class="ui">Restore from backup</span>.</li>
+        <li>Pick the backup file. Your notes, checklists, recurring notes, important dates and color names are added — nothing already in the app is overwritten.</li>
+      </ol>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I receive a shared checklist?</h3>
+      <ol>
+        <li>Copy the whole message you received (for example in Messages, Mail or WhatsApp).</li>
+        <li>Open WeekSpark and open a checklist, or create a new one: tap the checklist icon (<span class="ui">Turn into checklist</span>) under <span class="ui">Add...</span>, type any title and press Return.</li>
+        <li>Press and hold the <span class="ui">Add item...</span> field and choose <span class="ui">Paste</span>.</li>
+      </ol>
+      <p>The title and the items are added automatically: if the checklist is still empty, it takes the shared list’s title; otherwise the items are added at the end. In the full-screen checklist you can also tap the <span class="ui">Paste</span> button next to the field.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I found a bug</h3>
+      <p>Please email <a href="mailto:darosel.apps@gmail.com">darosel.apps@gmail.com</a> with a description of what happened, and a screenshot if you can. Mention your iPhone model and the app version too.</p>
+    </div>
+  </section>
+
+  <section class="lang-section" id="sv" lang="sv">
+    <p class="subtitle">Support</p>
+
+    <p>Fastnat på något, hittat en bugg, eller har en idé för appen? Hör av dig — WeekSpark drivs och underhålls av en person, så du pratar direkt med den som byggt appen.</p>
+
+    <div class="contact">
+      <p><strong>Daniel Oinonen (Darosel.Apps)</strong></p>
+      <p><a href="mailto:darosel.apps@gmail.com">darosel.apps@gmail.com</a></p>
+    </div>
+
+    <h2 class="faq-title">Vanliga frågor</h2>
+
+    <div class="faq-item">
+      <h3>Hur fungerar provperioden?</h3>
+      <p>WeekSpark är fullt fungerande gratis i 7 dagar från första gången du öppnar appen. Efter det låser du upp appen permanent med ett engångsköp — ingen prenumeration, inga återkommande kostnader.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Jag har redan köpt WeekSpark men det syns inte som upplåst</h3>
+      <p>Tryck på kugghjulet för att öppna <span class="ui">Inställningar</span> och tryck på <span class="ui">Återställ köp</span>. Det kopplar ditt tidigare köp till den här installationen. Kontrollera också att du är inloggad med samma Apple-ID som du använde vid köpet.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Kan jag använda WeekSpark på flera iPhones?</h3>
+      <p>Ja. Köpet hör till ditt Apple-ID, inte till en viss enhet. Installera WeekSpark på den andra iPhonen och tryck på <span class="ui">Återställ köp</span> i <span class="ui">Inställningar</span> för att låsa upp den där också.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Sparas mina anteckningar i molnet? Vad händer om jag byter telefon?</h3>
+      <p>Allt sparas bara på din telefon — det finns inget konto och ingen molnsynkronisering. För att flytta dina anteckningar till en ny telefon gör du en säkerhetskopia och öppnar den där:</p>
+      <ol>
+        <li>På den gamla telefonen: tryck på kugghjulet och välj <span class="ui">Exportera anteckningar</span>. Spara filen, till exempel på iCloud Drive i Filer, eller skicka den till dig själv.</li>
+        <li>På den nya telefonen: installera WeekSpark, tryck på kugghjulet och välj <span class="ui">Importera anteckningar</span>.</li>
+        <li>Välj säkerhetskopian. Dina anteckningar, checklistor, återkommande anteckningar, viktiga datum och färgnamn läggs till — inget som redan finns i appen skrivs över.</li>
+      </ol>
+    </div>
+
+    <div class="faq-item">
+      <h3>Hur tar jag emot en delad checklista?</h3>
+      <ol>
+        <li>Kopiera hela meddelandet du fått (till exempel i Meddelanden, Mail eller WhatsApp).</li>
+        <li>Öppna WeekSpark och öppna en checklista, eller skapa en ny: tryck på checklisteikonen (<span class="ui">Gör till checklista</span>) under <span class="ui">Lägg till...</span>, skriv valfri rubrik och tryck Retur.</li>
+        <li>Håll fingret i fältet <span class="ui">Lägg till vara...</span> och välj <span class="ui">Klistra in</span>.</li>
+      </ol>
+      <p>Rubriken och varorna läggs in automatiskt: är checklistan tom får den den delade listans rubrik, annars läggs varorna till sist. I den expanderade checklistan kan du också trycka på knappen <span class="ui">Klistra in</span> bredvid fältet.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Jag har hittat en bugg</h3>
+      <p>Skriv gärna till <a href="mailto:darosel.apps@gmail.com">darosel.apps@gmail.com</a> med en beskrivning av vad som hände, och gärna en skärmdump om det går. Nämn också vilken iPhone-modell och appversion du använder.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>WeekSpark drivs av Daniel Oinonen (Sereman).</p>
+    <p>WeekSpark is built and maintained by Daniel Oinonen (Darosel.Apps).<br>WeekSpark drivs av Daniel Oinonen (Darosel.Apps).</p>
+    <p><a href="marketing.html">WeekSpark</a> · <a href="privacy.html">Privacy Policy / Sekretesspolicy</a></p>
   </footer>
 </main>
 </body>
